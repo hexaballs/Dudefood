@@ -153,30 +153,6 @@ div.food-pics {
   transform: translateX(200px);
 }
 
-/*div.pic img {
-  width: 175px;
-  height: 175px;
-  float: left;
-  border: 3px solid white;
-  border-radius: 20px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  box-shadow: -15px 15px 0px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-}*/
-
-/*.pic img {
-    -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
-}
-
-.pic img:hover {
-  -webkit-filter: blur(3px);
-}*/
-
 div.key-message {
   border: 3px solid white;
   margin-top: 50px;
@@ -203,8 +179,8 @@ div.welcome {
 
 div.delivery {
   border: 2px solid #BD750A;
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   border-radius: 200px;
   text-align: center;
   float: right;
@@ -221,7 +197,7 @@ div.delivery {
   height: 130px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 30px;
   font-family:Impact, Charcoal, sans-serif;
   text-shadow: -2px 2px 0px #444444;
 }
@@ -231,9 +207,17 @@ div.delivery {
   font-size: 30px;
 }
 
-.delivery-time:hover {
+.key-message:hover .delivery-time {
   font-size: 35px;
-  margin-top: 10px;
+  -webkit-transition: all 100ms ease-out;
+  -moz-transition: all 100ms ease-out;
+  -o-transition: all 100ms ease-out;
+  -ms-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.key-message:hover .slogan-one {
+  font-size: 30px;
   -webkit-transition: all 100ms ease-out;
   -moz-transition: all 100ms ease-out;
   -o-transition: all 100ms ease-out;

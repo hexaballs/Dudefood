@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141016074448) do
+ActiveRecord::Schema.define(version: 20141016080210) do
 
-  create_table "fooditems", force: true do |t|
+  create_table "food_items", force: true do |t|
     t.string   "name"
     t.float    "price"
     t.string   "photo_path"
