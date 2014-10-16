@@ -1,3 +1,305 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+div.background {
+  background: url('background_1.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 850px;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.screen {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-top: 20px;
+  height: 850px;
+}
+
+div.headline {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 130px;
+  border-radius: 30px;
+  margin-top: 0px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 0px;
+  box-shadow: -10px 10px 8px rgba(0, 0, 0, 0.6);
+}
+
+.headline p {
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 80px;
+  margin-left: 60px;
+  color: #D7DBDC;
+  text-shadow: -10px 10px 0px #888888,
+                -20px 20px 0px #666666,
+                -20px 20px 0px #444444,
+                -20px 20px 0px #222222;
+}
+
+div.food-pics {
+  width: 450px;
+  margin-left: 120px;
+  margin-top: 50px;
+}
+
+.food-pics #box {
+  border: 5px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 175px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 175px;
+  -webkit-box-shadow: -15px 15px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -15px 15px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: -15px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.food-pics .box img {
+  position: absolute;
+  height: 175px;
+  width: 175px;
+  left: 0;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  padding: 0px;
+}
+
+
+.food-pics .box .caption {
+  background-color: rgba(0,0,0,0.8);
+  position: absolute;
+  color: #fff;
+  z-index: 100;
+  -webkit-transition: all 100ms ease-out;
+  -moz-transition: all 100ms ease-out;
+  -o-transition: all 100ms ease-out;
+  -ms-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  left: 0;
+}
+
+
+.food-pics .box .scale-caption {
+  opacity: 0;
+  width: 175px;
+  height: 175px;
+  text-align: left;
+}
+
+.food-pics .box:hover .scale-caption {
+    opacity: 1;
+}
+
+.food-pics .box .scale-caption h3, .food-pics .box .scale-caption p {
+  position: relative;
+  left: -200px;
+  width: 160px;
+  -webkit-transition: all 100ms ease-out;
+  -moz-transition: all 100ms ease-out;
+  -o-transition: all 100ms ease-out;
+  -ms-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.food-pics .box .scale-caption h3 {
+  font-size: 18px;
+  font-family: Impact, Charcoal, sans-serif;
+  text-shadow: -2px 2px 0px #666666;
+  position: absolute;
+  top: 20%;
+  transform: translate(0, -50%);
+  -webkit-transition-delay: 50ms;
+  -moz-transition-delay: 50ms;
+  -o-transition-delay: 50ms;
+  -ms-transition-delay: 50ms;
+  transition-delay: 50ms;
+}
+
+.food-pics .box .scale-caption p {
+  font-size: 30px;
+  font-family: Impact, Charcoal, sans-serif;
+  color: #feb23c;
+  text-shadow: -2px 2px 0px #7A4C07;
+  position: absolute;
+  top: 60%;
+  transform: translate(0, -50%);
+  -webkit-transition-delay: 100ms;
+  -moz-transition-delay: 100ms;
+  -o-transition-delay: 100ms;
+  -ms-transition-delay: 100ms;
+  transition-delay: 100ms;
+}
+
+.food-pics .box:hover #image {
+  -moz-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+.food-pics .box:hover .scale-caption h3, .food-pics .box:hover .scale-caption p {
+  -moz-transform: translateX(200px);
+  -o-transform: translateX(200px);
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+}
+
+/*div.pic img {
+  width: 175px;
+  height: 175px;
+  float: left;
+  border: 3px solid white;
+  border-radius: 20px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  box-shadow: -15px 15px 0px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}*/
+
+/*.pic img {
+    -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.pic img:hover {
+  -webkit-filter: blur(3px);
+}*/
+
+div.key-message {
+  border: 3px solid white;
+  margin-top: 50px;
+  margin-right: 135px;
+  border-radius: 20px;
+  height: 585px;
+  width: 51.333333%;;
+  background-color: rgba(255, 255, 255, 0.6);
+  float: right;
+  box-shadow: -18px 18px 0px rgba(0, 0, 0, 0.5);
+}
+
+div.welcome {
+  font-size: 60px;
+  font-family: Impact, Charcoal, sans-serif;
+  font-weight: bold;
+  float: left;
+  margin-top: 80px;
+  margin-left: 15px;
+  width: 400px;
+  text-align: center;
+  text-shadow: -5px 5px 0px #D7DBDC;
+}
+
+div.delivery {
+  border: 2px solid #BD750A;
+  width: 160px;
+  height: 160px;
+  border-radius: 200px;
+  text-align: center;
+  float: right;
+  margin-top: 50px;
+  margin-right: 70px;
+  background-color: rgba(254, 178, 60, 1);
+  box-shadow: -5px 5px 0px rgba(250, 250, 250, 0.3);
+}
+
+.delivery p {
+  color: #0678BF;
+  font-size: 25px;
+  width: 130px;
+  height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  font-family:Impact, Charcoal, sans-serif;
+  text-shadow: -2px 2px 0px #444444;
+}
+
+.delivery-time {
+  color: #F25F29;
+  font-size: 30px;
+}
+
+.delivery-time:hover {
+  font-size: 35px;
+  margin-top: 10px;
+  -webkit-transition: all 100ms ease-out;
+  -moz-transition: all 100ms ease-out;
+  -o-transition: all 100ms ease-out;
+  -ms-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.bottom {
+  clear: both;
+}
+
+div.description {
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+  width: 400px;
+  margin-top: 30px;
+  margin-left: 15px;
+  float: left;
+}
+
+.slogan-one {
+  font-size: 25px;
+  font-weight: bold;
+  color: #feb23c;
+  text-shadow: -2px 2px 0px #7A4C07;
+}
+
+.slogan-two {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 40px;
+  text-shadow: -2px 2px 0px #D7DBDC;
+}
+
+.explore {
+  margin-top: 30px;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: -5px 5px 0px rgba(250, 250, 250, 0.3);
+  text-shadow: -2px 2px 0px #333333;
+}
+
+.right {
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  float: right;
+  width: 300px;
+  margin-top: 55px;
+}
+
+.control-label {
+  text-shadow: -2px 2px 0px #D7DBDC;
+}
+
+.checkbox {
+  text-shadow: -2px 2px 0px #D7DBDC;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: -5px 5px 0px rgba(250, 250, 250, 0.3);
+  margin-right: 5px;
+  text-shadow: -2px 2px 0px #333333;
+
+}
