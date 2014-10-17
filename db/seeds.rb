@@ -22,5 +22,5 @@ FoodItem.create name: "Chicken with Rice", price: 100, photo_path: "chicken_with
 FoodItem.create name: "Monkey Brain", price: 0, photo_path: "monkey_brain.png", cuisine: "Asian", restaurant_name: "Yummy Chinese Restaurant", harrys_choice: true
 FoodItem.create name: "Liver with fava beans and a nice Chianti", price: 120, photo_path: "liver.png", cuisine: "Adventurous", restaurant_name: "Hannibal's Bistro", harrys_choice: false
 FoodItem.create name: "Dog Meat", price: 30, photo_path: "butchered_dog.png", cuisine: "Asian", restaurant_name: "Kim Jong Un's Favourites", harrys_choice: false
-FoodItem.create name: "Crab Yellow Curry ", price: 230, photo_path: "Crab Yellow Curry.png", cuisine: "Asian", restaurant_name: "Raya", harrys_choice: true
+FoodItem.create name: "Crab Yellow Curry", price: 230, photo_path: "crab_yellow_curry.png", cuisine: "Asian", restaurant_name: "Raya", harrys_choice: true
 FoodItem.create name: "Frog Heart", price: 1000, photo_path: "shaking_frog.png", cuisine: "Asian", restaurant_name: "Borat's Restaurant", harrys_choice: false

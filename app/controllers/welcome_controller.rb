@@ -5,30 +5,42 @@ class WelcomeController < ApplicationController
       moment = Time.now
       delivery = moment + 45 * 60
       @delivery_time = delivery.localtime.strftime("%l:%M %p")
+
+      @cuisine = ["Western", "Asian", "Adventurous"]
+      @western = FoodItem.where(cuisine: @cuisine[0]).sample(2)
+      @asian = FoodItem.where(cuisine: @cuisine[1]).sample(2)
+      @adventurous = FoodItem.where(cuisine: @cuisine[2]).sample(2)
+
       @item = [
-        { :name => "Crispy Kale Grilled Cheese with Fried Eggs Sandwich",
-          :image_url => "crispy_kale.jpg",
-          :price => "$99"
+        { :name => @western[0].name,
+          :image_url => @western[0].photo_path,
+          :price => @western[0].price,
+          :cuisine =>@western[0].cuisine
           },
-        { :name => "Grilled Flank Steak with Black Beans Corn and Tomatoes",
-          :image_url => "flank_steak.jpg",
-          :price => "$199"
+        { :name => @western[1].name,
+          :image_url => @western[1].photo_path,
+          :price => @western[1].price,
+          :cuisine =>@western[1].cuisine
           },
-        { :name => "Three Cheese Zucchini Stuffed Lasagna Rolls",
-          :image_url => "zucchini_lasagna.jpg",
-          :price => "$89"
+        { :name => @asian[0].name,
+          :image_url => @asian[0].photo_path,
+          :price => @asian[0].price,
+          :cuisine =>@asian[0].cuisine
           },
-        { :name => "Shredded Kale Salad With Fried Chicken",
-          :image_url => "kale_fc.jpg",
-          :price => "$99"
+        { :name => @asian[1].name,
+          :image_url => @asian[1].photo_path,
+          :price => @asian[1].price,
+          :cuisine =>@asian[1].cuisine
           },
-        { :name => "Grilled Fish With Citrus Herb Crust",
-          :image_url => "grilled_fish.jpg",
-          :price => "$119"
+        { :name => @adventurous[0].name,
+          :image_url => @adventurous[0].photo_path,
+          :price => @adventurous[0].price,
+          :cuisine =>@adventurous[0].cuisine
           },
-        { :name => "New York Steak with Mushrooms",
-          :image_url => "steak_mushrooms.jpg",
-          :price => "$299"
+        { :name => @adventurous[1].name,
+          :image_url => @adventurous[1].photo_path,
+          :price => @adventurous[1].price,
+          :cuisine =>@adventurous[1].cuisine
           }
         ]
       render 'index'

@@ -153,6 +153,14 @@ div.food-pics {
   transform: translateX(200px);
 }
 
+/*.food-pics .cuisine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid white;
+  z-index: 10;
+}*/
+
 div.key-message {
   border: 3px solid white;
   margin-top: 50px;
@@ -209,20 +217,11 @@ div.delivery {
 
 .key-message:hover .delivery-time {
   font-size: 35px;
-  -webkit-transition: all 100ms ease-out;
-  -moz-transition: all 100ms ease-out;
-  -o-transition: all 100ms ease-out;
-  -ms-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.key-message:hover .slogan-one {
-  font-size: 30px;
-  -webkit-transition: all 100ms ease-out;
-  -moz-transition: all 100ms ease-out;
-  -o-transition: all 100ms ease-out;
-  -ms-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
+  -webkit-transition: all 50ms ease-out;
+  -moz-transition: all 50ms ease-out;
+  -o-transition: all 50ms ease-out;
+  -ms-transition: all 50ms ease-out;
+  transition: all 50ms ease-out;
 }
 
 .bottom {
@@ -239,7 +238,7 @@ div.description {
 }
 
 .slogan-one {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   color: #feb23c;
   text-shadow: -2px 2px 0px #7A4C07;

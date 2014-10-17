@@ -7,14 +7,20 @@
 
         <% @item.each do |element| %>
         <div id="box" class="box">
-          <img id="image" src="/assets/<%= element[:image_url] %>"/>
+          <%= image_tag element[:image_url], id:"image" %>
           <span class="caption  scale-caption">
-            <h3> <%= element[:name] %> </h3>
+            <h3><a href="#"> <%= element[:name] %> </a></h3>
             <p> <%= element[:price] %> </p>
           </span>
         </div>
+<!--         <div class="cuisine">
+          <p><%= element[:cuisine] %></p>
+        </div> -->
         <% end %>
       </div>
+
+
+<% if false %>
 <!--         # <div id="box" class="box">
         #   <img id="image" src="http://img02.foodily.net/img/620x620/cf2d3796aca2.jpg"/>
         #   <span class="caption  scale-caption">
@@ -55,11 +61,7 @@
         #     <p>$99</p>
         #   </span>
         # </div> -->
-
-
-
-
-
+<% end %>
 
       <div class="col-md-7 key-message">
           <div class="top">
