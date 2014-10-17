@@ -5,12 +5,15 @@
 
       <div class="col-md-3 food-pics">
 
-        <% @item.each do |element| %>
+        <% [@western[0], @western[1], @asian[0], @asian[1], @adventurous[0], @adventurous[1]].each do |element| %>
           <div id="box" class="box">
-            <%= image_tag element[:image_url], id:"image" %>
+            <%= image_tag element.photo_path, id:"image" %>
             <span class="caption  scale-caption">
-              <h3><a href="#"> <%= element[:name] %> </a></h3>
-              <p> <%= element[:price] %> </p>
+              <a href="/food_item/show/<%= element.id %>">
+              <h3>
+                <%= link_to element.name, controller: "food_item", action: "show", id: element.id %>
+              </h3>
+              <p> <%= element.price %> </p>
             </span>
           </div>
         <% end %>

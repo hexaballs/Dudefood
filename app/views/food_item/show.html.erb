@@ -1,2 +1,5 @@
-<h1>FoodItem#show</h1>
-<p>Find me in app/views/food_item/show.html.erb</p>
+<h1> <%= @item.name %> </h1>
+<p>Restaurant: <%= @item.restaurant_name %></p>
+<p>Price: $<%= @item.price %></p>
+<p>We give it a <%= @item.harrys_choice ? "THUMBS UP" : "THUMBS DOWN" %></p>
+<%= image_tag @item.photo_path %>
