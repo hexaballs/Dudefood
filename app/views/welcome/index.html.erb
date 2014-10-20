@@ -6,17 +6,18 @@
       <div class="col-md-3 food-pics">
 
         <% [@western[0], @western[1], @asian[0], @asian[1], @adventurous[0], @adventurous[1]].each do |element| %>
+        <div class="box-container">
           <div id="box" class="box">
             <%= image_tag element.photo_path, id:"image" %>
             <span class="caption  scale-caption">
-              <a href="/food_item/show/<%= element.id %>">
-              <h3>
-                <%= link_to element.name, controller: "food_item", action: "show", id: element.id %>
-              </h3>
+              <h3><%= link_to element.name, controller: "food_item", action: "show", id: element.id %></h3>
               <p> <%= element.price %> </p>
             </span>
           </div>
+          <div class="layer"><p><%= element.cuisine %></p></div>
+        </div>
         <% end %>
+
       </div>
 
 
